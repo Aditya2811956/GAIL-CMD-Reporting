@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <script>
+    // Fix lang attribute based on domain
+    (function() {
+      var hostname = window.location.hostname;
+      
+      // Check if it's the Hindi IDN domain
+      var hindiDomains = [
+        'xn--h2brj9c.xn--11b5bs3a9aj6g.xn--h2breg3eve', // Punycode
+        'एमओएसपीआई.सरकार.भारत'  // Unicode form
+      ];
+      
+      var isHindi = hindiDomains.some(function(d) {
+        return hostname.indexOf(d) !== -1;
+      });
+      
+      if (isHindi) {
+        document.documentElement.lang = 'hi';
+        document.documentElement.dir = 'ltr'; // Hindi is LTR
+      }
+    })();
+  </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-P8GSNRRF');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8" />
+
+    <meta name="google-site-verification" content="5yRxFKhtKiVN_QnM8JwQ80gkTzaNE89xp0pO0QLUsFI" />
+    <meta name="description" content="Ministry of Statistics and Programme Implementation, Government of India">
+    <meta name="keywords" content="Statistics, Mospi">
+    <meta name="title" content="Ministry of Statistics and Programme Implementation, Government of India">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+
+    <title>Ministry of Statistics and Program Implementation | Government Of India</title>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/assets/index-BWzj7PX5.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DpcmNdVB.css">
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8GSNRRF"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="root"></div>
+
+    <!-- React application JS entry -->
+  </body>
+</html>

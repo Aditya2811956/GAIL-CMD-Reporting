@@ -1,0 +1,58 @@
+# Secrets — never commit
+.env
+.env.save
+.env.local
+*.env
+*.env*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Temp uploads
+temp-uploads/
+
+# Generated files
+generated_*.xml
+
+# Vector store (local FAISS)
+shared_index/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Local Python environment
+venv311/
+
+# Local ChromaDB data
+chroma_data/
+chroma.log
+
+# Generated output
+output/
+
+# Company/source data
+data/reference_files/
+documents/
+
+# Backup/development files
+*.bak
+*.backup
+*.before_gdp_fix
+
+extraction/scrapers/wpi_scraper_backup.py
+
+generation/service.py.backup_inflation

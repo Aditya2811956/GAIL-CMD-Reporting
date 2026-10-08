@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+__pycache__
+**/__pycache__
+*.pyc
+*.pyo
+.venv
+chroma_data
+output/*.docx
+output/*.pdf
+output/benchmark
+reference_files
+.DS_Store
